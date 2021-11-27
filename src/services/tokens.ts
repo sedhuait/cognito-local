@@ -59,12 +59,15 @@ export async function generateTokens(
         auth_time: authTime,
         "cognito:username": user.Username,
         email: attributeValue("email", user.Attributes),
+        "custom:userId": attributeValue("custom:userId", user.Attributes),
+        "custom:accountId": attributeValue("custom:accountId", user.Attributes),
+        "custom:role": attributeValue("custom:role", user.Attributes),
       },
       PrivateKey.pem,
       {
         algorithm: "RS256",
         // TODO: this needs to match the actual host/port we started the server on
-        issuer: `http://localhost:9229/${userPoolId}`,
+        issuer: `http://localhost:4000/${userPoolId}`,
         expiresIn: "24h",
         audience: clientId,
         keyid: "CognitoLocal",

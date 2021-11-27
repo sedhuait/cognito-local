@@ -8,7 +8,7 @@ const logger = new ConsoleLogger();
 createDefaultServer(logger)
   .then((server) => {
     const hostname = process.env.HOST ?? "localhost";
-    const port = parseInt(process.env.PORT ?? "9229", 10);
+    const port = parseInt(process.env.PORT ?? "4000", 10);
     return server.start({ hostname, port });
   })
   .then((httpServer) => {

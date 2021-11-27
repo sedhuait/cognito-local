@@ -98,7 +98,7 @@ export const createServer = (
     application: app,
     start(startOptions) {
       const actualOptions: ServerOptions = {
-        port: options?.port ?? 9229,
+        port: options?.port ?? 4000,
         hostname: options?.hostname ?? "localhost",
         development: options?.development ?? false,
         ...options,

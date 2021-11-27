@@ -25,7 +25,7 @@ const defaults: Config = {
     UsernameAttributes: ["email"],
   },
   TokenConfig: {
-    IssuerDomain: "http://localhost:9229",
+    IssuerDomain: "http://localhost:4000",
   },
 };
 

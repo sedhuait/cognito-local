@@ -67,7 +67,7 @@ describe("GetUser target", () => {
         PrivateKey.pem,
         {
           algorithm: "RS256",
-          issuer: `http://localhost:9229/test`,
+          issuer: `http://localhost:4000/test`,
           expiresIn: "24h",
           keyid: "CognitoLocal",
         }
@@ -107,7 +107,7 @@ describe("GetUser target", () => {
         PrivateKey.pem,
         {
           algorithm: "RS256",
-          issuer: `http://localhost:9229/test`,
+          issuer: `http://localhost:4000/test`,
           expiresIn: "24h",
           keyid: "CognitoLocal",
         }

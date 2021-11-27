@@ -372,7 +372,7 @@ describe("InitiateAuth target", () => {
             );
             expect(decodedAccessToken).toMatchObject({
               client_id: "clientId",
-              iss: "http://localhost:9229/test",
+              iss: "http://localhost:4000/test",
               sub: "0000-0000",
               token_use: "access",
               username: "0000-0000",
@@ -398,7 +398,7 @@ describe("InitiateAuth target", () => {
             );
             expect(decodedIdToken).toMatchObject({
               aud: "clientId",
-              iss: "http://localhost:9229/test",
+              iss: "http://localhost:4000/test",
               sub: "0000-0000",
               token_use: "id",
               "cognito:username": "0000-0000",
@@ -454,7 +454,7 @@ describe("InitiateAuth target", () => {
           );
           expect(decodedAccessToken).toMatchObject({
             client_id: "clientId",
-            iss: "http://localhost:9229/test",
+            iss: "http://localhost:4000/test",
             sub: "0000-0000",
             token_use: "access",
             username: "0000-0000",
@@ -476,7 +476,7 @@ describe("InitiateAuth target", () => {
           );
           expect(decodedIdToken).toMatchObject({
             aud: "clientId",
-            iss: "http://localhost:9229/test",
+            iss: "http://localhost:4000/test",
             sub: "0000-0000",
             token_use: "id",
             "cognito:username": "0000-0000",
